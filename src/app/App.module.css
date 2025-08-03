@@ -1,0 +1,33 @@
+/* CSS Module для App компонента */
+.logo {
+  transition: transform 0.5s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.logoSpin {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Кастомные стили для VibeVise */
+.appContainer {
+  min-height: 100vh;
+}
+
+.themeToggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
